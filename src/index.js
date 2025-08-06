@@ -83,6 +83,7 @@ async function playReceEngine(character1, character2){
         if(pawerResult1 > pawerResult2){
             console.log(`🏁${character1.NOME} venceu o confronto!`);
             character1.PONTOS -= 1;
+            if(character1.PONTOS == 0) character1.PONTOS = 0;
         }else if(pawerResult2 > pawerResult1){
             console.log(`🏁${character2.NOME} venceu o confronto!`);
             character2.PONTOS -= 1;
